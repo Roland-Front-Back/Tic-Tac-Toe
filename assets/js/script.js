@@ -196,3 +196,25 @@ function ScreenController(playerOne, playerTwo) {
   gameBoardDiv.addEventListener("click", clickHandler);
   updateScreen(); // initialize render
 }
+
+let players;
+
+// Dialog and Form data showModal
+const getPlayers = (function () {
+  const dialog = document.querySelector("#dialog");
+  dialog.showModal();
+
+  const form = document.querySelector("#players");
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    // get the form data in the built-in browser API (FormData)
+    const formData = new FormData(form);
+
+    // gives a key/value pairs
+    // turns it into regular object using => Object.fromEntries()
+    players = Object.fromEntries(formData.entries());
+    ScreenController(players.playerOne, players.playerTwo);
+    dialog.closest();
+  });
+})();
