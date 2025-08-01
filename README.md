@@ -44,11 +44,15 @@
 
 ---
 
+<a id="overview"></a>
+
 ## 🧾 Overview
 
 This project is a simple yet engaging 2-player Tic-Tac-Toe game. It demonstrates modular JavaScript programming using factory functions and manages game state, player interaction, and win conditions without any libraries or frameworks.
 
 ---
+
+<a id="features"></a>
 
 ## ✨ Features
 
@@ -60,6 +64,8 @@ This project is a simple yet engaging 2-player Tic-Tac-Toe game. It demonstrates
 - 📦 No dependencies
 
 ---
+
+<a id="project-structure"></a>
 
 ## 📁 Project Structure
 
@@ -80,11 +86,27 @@ Tic-Tac-Toe/
 │       └── win-screen.png
 ```
 
+<a id="project-index"></a>
+
+## 📌 Project Index
+
+| File                  | Description                    |
+| --------------------- | ------------------------------ |
+| index.html            | Main HTML file and entry point |
+| assets/css/styles.css | Contains all styling rules     |
+| assets/js/script.js   | Contains the entire game logic |
+
+<a id="getting-started"></a>
+
 ## 🚀 Getting Started
+
+<a id="prerequisites"></a>
 
 ## 🔧 Prerequisites
 
 - No dependencies or installations required. Just a browser.
+
+<a id="installation"></a>
 
 ## 📦 Installation
 
@@ -100,9 +122,11 @@ git clone https://github.com/Roland-Front-Back/Tic-Tac-Toe
 cd Tic-Tac-Toe
 ```
 
+<a id="usage"></a>
+
 ## ▶️ Usage
 
-- Simply open index.html in any modern browser:
+Simply open index.html in any modern browser:
 
 ```sh
 open index.html
@@ -114,9 +138,13 @@ OR
 start index.html
 ```
 
+<a id="testing"></a>
+
 ## 🧪 Testing
 
 There is no automated test framework used yet. You can manually test by playing the game in a browser.
+
+<a id="roadmap"></a>
 
 ## 🛣️ Roadmap
 
@@ -125,6 +153,8 @@ There is no automated test framework used yet. You can manually test by playing 
 - [x] Add restart functionality
 - [ ] Add local storage to save scores
 - [ ] Add single-player mode (AI)
+
+<a id="contributing"></a>
 
 ## 🤝 Contributing
 
@@ -170,9 +200,13 @@ We welcome contributions!
 </p> 
 </details>
 
+<a id="license"></a>
+
 ## 📝 License
 
 This project is licensed under the MIT License.
+
+<a id="acknowledgments"></a>
 
 ## 🙌 Acknowledgments
 
@@ -184,6 +218,6 @@ This project is licensed under the MIT License.
 
 <div align="right">
 
-Back to Top
+[⬆️ Back to Top](#top)
 
 </div>
