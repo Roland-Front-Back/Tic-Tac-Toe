@@ -24,3 +24,23 @@ function GameBoard() {
 
   return { getBoard, placeMark };
 }
+
+// Cell function factory
+// handles cell values
+function Cell() {
+  let value = "";
+
+  // add player mark to change the cell value if empty
+  const addPlayerMark = (playerMark) => {
+    if (value === "") {
+      value = playerMark;
+    }
+  };
+
+  const getValue = () => value;
+
+  return {
+    addPlayerMark,
+    getValue,
+  };
+}
