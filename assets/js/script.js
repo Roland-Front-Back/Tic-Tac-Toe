@@ -73,12 +73,11 @@ function GameController(
   };
 
   // Flatten the board to 1d arr. of values
-  const getFlatBoard = () => {
+  const getFlatBoard = () =>
     board
       .getBoard()
       .flat()
       .map((cell) => cell.getValue());
-  };
 
   // Checks if current player has a winning patter
   const checkWinner = (playerMark) => {
@@ -93,7 +92,7 @@ function GameController(
       [2, 4, 6],
     ];
 
-    const boardFlat = getBoard();
+    const boardFlat = getFlatBoard();
 
     // returns if player mark === to winpattern
     return winPattern.some((pattern) =>
@@ -190,7 +189,7 @@ function ScreenController(playerOne, playerTwo) {
 
     // converts value in number
     game.playRound(Number(row), Number(col));
-    updateScreen;
+    updateScreen();
   }
   // Initialize the first screen render
   gameBoardDiv.addEventListener("click", clickHandler);
@@ -200,6 +199,7 @@ function ScreenController(playerOne, playerTwo) {
 let players;
 
 // Dialog and Form data showModal
+// IIFE
 const getPlayers = (function () {
   const dialog = document.querySelector("#dialog");
   dialog.showModal();
@@ -215,6 +215,6 @@ const getPlayers = (function () {
     // turns it into regular object using => Object.fromEntries()
     players = Object.fromEntries(formData.entries());
     ScreenController(players.playerOne, players.playerTwo);
-    dialog.closest();
+    dialog.close();
   });
 })();
