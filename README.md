@@ -29,6 +29,8 @@
 ## 📚 Table of Contents
 
 - [Overview](#overview)
+- [Live Demo](#live-demo)
+- [ScreenShots](#screenshots)
 - [Features](#features)
 - [Project Structure](#project-structure)
   - [Project Index](#project-index)
@@ -49,6 +51,27 @@
 ## 🧾 Overview
 
 This project is a simple yet engaging 2-player Tic-Tac-Toe game. It demonstrates modular JavaScript programming using factory functions and manages game state, player interaction, and win conditions without any libraries or frameworks.
+
+---
+
+<a id="live-demo"></a>
+
+### 🎯 Live Demo
+
+👉 [Play Now on GitHub Pages](https://Roland-Front-Back.github.io/Tic-Tac-Toe/)
+
+---
+
+<a id="screenshots"></a>
+
+### 🖼️ Screenshots
+
+<div align="center">
+  <img src="assets/screenshots/gamestate.png" alt="Tic-Tac-Toe Screenshot" width="500"/>
+  <img src="assets/screenshots/playing.png" alt="Tic-Tac-Toe Screenshot" width="500"/>
+  <img src="assets/screenshots/winning.png" alt="Tic-Tac-Toe Screenshot" width="500"/>
+
+</div>
 
 ---
 
