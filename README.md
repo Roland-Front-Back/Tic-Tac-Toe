@@ -159,10 +159,11 @@ We welcome contributions!
    ```
 
 5. Open a Pull Request
+</details>
 
----
+<br>
 
-</details> <details> <summary><strong>Contributor Graph</strong></summary> <br>
+<details> <summary><strong>Contributor Graph</strong></summary> <br>
 <p align="left"> 
 <a href="https://github.com/Roland-Front-Back/Tic-Tac-Toe/graphs/contributors"> 
 <img src="https://contrib.rocks/image?repo=Roland-Front-Back/Tic-Tac-Toe" /> </a> 
@@ -185,4 +186,4 @@ This project is licensed under the MIT License.
 
 Back to Top
 
-</div> ```
+</div>
