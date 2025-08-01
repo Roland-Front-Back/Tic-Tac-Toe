@@ -3,7 +3,7 @@
 <!-- HEADER -->
 <div align="center">
 
-<img src="readmeai/assets/logos/purple.svg" alt="Project Logo" width="200"/>
+<!-- <img src="readmeai/assets/logos/purple.svg" alt="Project Logo" width="200"/> -->
 
 # 🎮 TIC-TAC-TOE
 
