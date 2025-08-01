@@ -135,3 +135,54 @@ We welcome contributions!
 - 🐞 Report Bugs
 
 - 💡 Submit Features
+
+<details> <summary><strong>Contributor Guide</strong></summary>
+
+1. Fork the repo
+
+2. Create a new branch
+
+   ```sh
+   git checkout -b feature/your-feature-name
+   ```
+
+3. Commit your changes
+
+   ```sh
+   git commit -m "Add your message"
+   ```
+
+4. Push to GitHub
+
+   ```sh
+   git push origin feature/your-feature-name
+   ```
+
+5. Open a Pull Request
+
+---
+
+</details> <details> <summary><strong>Contributor Graph</strong></summary> <br>
+<p align="left"> 
+<a href="https://github.com/Roland-Front-Back/Tic-Tac-Toe/graphs/contributors"> 
+<img src="https://contrib.rocks/image?repo=Roland-Front-Back/Tic-Tac-Toe" /> </a> 
+</p> 
+</details>
+
+## 📝 License
+
+This project is licensed under the MIT License.
+
+## 🙌 Acknowledgments
+
+    Flaticon for the game icon
+
+    JavaScript factory functions concept: MDN Docs
+
+    All contributors and reviewers
+
+<div align="right">
+
+Back to Top
+
+</div> ```
