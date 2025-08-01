@@ -1,87 +1,137 @@
-🎮 Tic-Tac-Toe
+<div id="top"></div>
 
-A fully functional Tic-Tac-Toe game built using HTML, CSS, and Vanilla JavaScript. This project demonstrates fundamental principles of modular JavaScript, DOM manipulation, and event handling, wrapped in a clean and responsive UI.
+<!-- HEADER -->
+<div align="center">
 
-Tic-Tac-Toe Icon
-🚀 Features
+<img src="readmeai/assets/logos/purple.svg" alt="Project Logo" width="200"/>
 
-    🎯 Classic 2-player Tic-Tac-Toe gameplay.
+# 🎮 TIC-TAC-TOE
 
-    🧍 Custom player name input using a modal dialog.
+</div>
 
-    📱 Responsive and modern user interface.
+<p align="center">
+  A clean, responsive 2-player Tic-Tac-Toe game built with HTML, CSS, and vanilla JavaScript.
+  <br />
+</p>
 
-    🔁 Restart button to reset the game.
+<div align="center">
 
-    🏆 Win detection and draw handling.
+<!-- BADGES -->
+<img src="https://img.shields.io/github/license/Roland-Front-Back/Tic-Tac-Toe?logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+<img src="https://img.shields.io/github/last-commit/Roland-Front-Back/Tic-Tac-Toe?logo=git&logoColor=white&color=0080ff" alt="last-commit">
+<img src="https://img.shields.io/github/languages/top/Roland-Front-Back/Tic-Tac-Toe?color=0080ff" alt="repo-top-language">
+<img src="https://img.shields.io/github/languages/count/Roland-Front-Back/Tic-Tac-Toe?color=0080ff" alt="repo-language-count">
 
-    🧠 Modular JavaScript structure using function factories.
+</div>
 
-🛠️ Technologies Used
+---
 
-    HTML5 – Structure and layout
+## 📚 Table of Contents
 
-    CSS3 – Styling and responsiveness
+- [Overview](#overview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+  - [Project Index](#project-index)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Testing](#testing)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
 
-    JavaScript (ES6+) – Game logic and interaction
+---
 
-📂 Project Structure
+## 🧾 Overview
 
-tic-tac-toe/
+This project is a simple yet engaging 2-player Tic-Tac-Toe game. It demonstrates modular JavaScript programming using factory functions and manages game state, player interaction, and win conditions without any libraries or frameworks.
+
+---
+
+## ✨ Features
+
+- 🎮 2-player gameplay with custom player name input
+- 🏆 Win and tie detection
+- 🧠 Modular JS structure using function factories
+- ♻️ Restart functionality
+- 💻 Fully responsive design
+- 📦 No dependencies
+
+---
+
+## 📁 Project Structure
+
+```sh
+Tic-Tac-Toe/
+├── README.md
 ├── index.html
 ├── assets/
-│ ├── css/
-│ │ └── styles.css
-│ ├── js/
-│ │ └── script.js
-│ └── img/
-│ └── tic-tac-toe.png
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── script.js
+│   ├── img/
+│   │   └── tic-tac-toe.png
+│   └── screenshots/
+│       ├── start-screen.png
+│       ├── gameplay.png
+│       └── win-screen.png
+```
 
-▶️ How to Run
+## 🚀 Getting Started
 
-    Clone or download this repository.
+## 🔧 Prerequisites
 
-    Open index.html in any modern web browser.
+- No dependencies or installations required. Just a browser.
 
-    Enter player names in the dialog.
+## 📦 Installation
 
-    Enjoy the game!
+## Clone the repository:
 
-🧩 Game Logic Overview
+```sh
+git clone https://github.com/Roland-Front-Back/Tic-Tac-Toe
+```
 
-    GameBoard(): Manages the 2D grid of cells.
+## Navigate into the project folder:
 
-    Cell(): Stores and updates the state of individual cells.
+```sh
+cd Tic-Tac-Toe
+```
 
-    GameController(): Handles turn-taking, win/tie logic, and move validation.
+## ▶️ Usage
 
-    ScreenController(): Renders the UI and handles DOM interactions.
+- Simply open index.html in any modern browser:
 
-    Dialog Input: Uses native <dialog> to collect player names at game start.
+```sh
+open index.html
+```
 
-📸 Screenshots
+OR
 
-### 🎬 Start Screen
+```sh
+start index.html
+```
 
-![Start Screen](assets/screenshots/ss-1.png)
+## 🧪 Testing
 
-### 🕹️ Gameplay
+There is no automated test framework used yet. You can manually test by playing the game in a browser.
 
-![Game In Progress](assets/screenshots/ss-2.png)
+## 🛣️ Roadmap
 
-### 🏁 Win State
+- [x] Add player name input
+- [x] Handle win/tie detection
+- [x] Add restart functionality
+- [ ] Add local storage to save scores
+- [ ] Add single-player mode (AI)
 
-![Win Screen](assets/screenshots/ss-3.png)
+## 🤝 Contributing
 
-📦 Dependencies
+We welcome contributions!
 
-No external libraries or frameworks are used. Everything is written in vanilla JavaScript.
-🎨 Icons
+- 💬 Join Discussions
 
-    Icon used in this project:
+- 🐞 Report Bugs
 
-        Tic Tac Toe Icons by Freepik - Flaticon
-
-📃 License
-
-This project is open-source and available under the MIT License.
+- 💡 Submit Features
