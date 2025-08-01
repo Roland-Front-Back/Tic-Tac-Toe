@@ -63,7 +63,7 @@ tic-tac-toe/
 
 ### 🎬 Start Screen
 
-![Start Screen](assets/screenshots/ss-1png)
+![Start Screen](assets/screenshots/ss-1.png)
 
 ### 🕹️ Gameplay
 
