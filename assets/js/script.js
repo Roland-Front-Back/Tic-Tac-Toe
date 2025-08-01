@@ -132,3 +132,67 @@ function GameController(
     getIsTie,
   };
 }
+
+// ScreenController function factory
+// Handles UI layer
+function ScreenController(playerOne, playerTwo) {
+  const game = GameController(playerOne, playerTwo);
+  const gameStatus = document.querySelector(".gamestatus");
+  const gameBoardDiv = document.querySelector("#gameboard");
+  const restartBtn = document.querySelector("#restart-btn");
+
+  restartBtn.addEventListener("click", () => {
+    ScreenController(players.playerOne, players.playerTwo); // re-initialize controller
+  });
+
+  // Renders the board and update screen turn/status
+  const updateScreen = () => {
+    gameBoardDiv.textContent = "";
+
+    // Gets game state and player data
+    const board = game.getBoard();
+    const activePlayer = game.getActivePlayer();
+    const winner = game.getIsWinner();
+    const tie = game.getIsTie();
+
+    // Display text message
+    if (!winner && !tie) {
+      gameStatus.textContent = `${activePlayer.name}'s turn...`;
+    } else if (winner) {
+      gameStatus.textContent = `${activePlayer.name}'s WINS`;
+    } else if (tie) {
+      gameStatus.textContent = `It's a TIE!`;
+    }
+
+    // Dynamically build the 3x3 grid in the html with buttons
+    board.forEach((row, rowIndex) => {
+      row.forEach((cell, colIndex) => {
+        const cellBtn = document.createElement("button");
+        cellBtn.classList.add("cell");
+        cellBtn.dataset.row = rowIndex;
+        cellBtn.dataset.column = colIndex;
+        cellBtn.textContent = cell.getValue();
+        gameBoardDiv.appendChild(cellBtn);
+      });
+    });
+  };
+
+  // Handles player clicks
+  function clickHandler(event) {
+    if (!event.target.classList.contains("cell")) return; // ignore click outside cells
+
+    // stop game if someone has already won or it's a tie
+    if (game.getIsWinner() || game.getIsTie()) return;
+
+    // Get clicked cell position
+    const row = event.target.dataset.row;
+    const col = event.target.dataset.column;
+
+    // converts value in number
+    game.playRound(Number(row), Number(col));
+    updateScreen;
+  }
+  // Initialize the first screen render
+  gameBoardDiv.addEventListener("click", clickHandler);
+  updateScreen(); // initialize render
+}
