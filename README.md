@@ -227,7 +227,9 @@ We welcome contributions!
 
 ## 📝 License
 
-This project is licensed under the [MIT License](LICENSE).
+- This project is licensed under the <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.
+
+- See [LICENSE](LICENSE)
 
 <a id="acknowledgments"></a>
 
